@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -24,7 +25,7 @@
   <link href="index.css" rel="stylesheet">
 
   <!-- Vue component styles -->
-  <link href="components/adder/adder.css" rel="stylesheet">
+  <link href="components/average/average.css" rel="stylesheet">
 
 </head>
 
@@ -33,7 +34,7 @@
 
     <div class="row">
 
-      <article id="adder" class="col-md-4 ">
+      <article id="average" class="col-md-4 ">
         <h2>Vue is awesome!</h2>
         <p>Two-way data binding listens for changes and automatically updates.</p>
         <p>This is component adds!</p>
@@ -55,10 +56,19 @@
           <span id="secondWarning" class="text-danger"></span>
         </fieldset>
 
+        <fieldset class="mt-2">
+          <label for="thirdNumber">Enter third number (1 to 100):</label>
+          <input v-model="thirdNumber" id="thirdNumber" type="number" min="1" max="100">
+          <span id="thirdWarning" class="text-danger"></span>
+        </fieldset>
+
         <h3 class="mt-2">{{result}}</h3>
       </article>
 
-          </div>
+
+      
+
+    </div>
 
   </main>
 
@@ -71,7 +81,6 @@
       <a href="https://karanamvijaykumar.github.io/vue-js-simple-problem/">Demo</a>
       &#9670;
       <a href="https://github.com/KaranamVijayKumar/vue-js-simple-problem">Source</a>
-      
     </div>
   </footer>
 
@@ -94,8 +103,7 @@
 
   <!-- Vue components -->
 
-  <script src="components/adder/adder.js"></script>
-  
+  <script src="components/average/average.js"></script>
 </body>
 
 </html>
