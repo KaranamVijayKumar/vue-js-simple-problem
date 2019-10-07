@@ -6,7 +6,7 @@ const adder = new Vue({
     guest: 'Vijay',
     firstNumber: 5,
     secondNumber: 3,
-    thirdNumber: 2
+    thirdNumber: 1
   },
   computed: {
     result: function () {
